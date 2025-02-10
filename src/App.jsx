@@ -12,6 +12,28 @@ import {Contact} from "./components/Contact";
 function App() {
 
   const [isLoaded,setIsLoaded] =  useState(false);
+  useEffect(() => {
+    if (isLoaded) {
+      // Po načtení povolíme scrollování na těle
+      document.body.style.overflow = "auto"; 
+      document.documentElement.style.overflow = "auto"; 
+      
+      // Načteme vlastní styl pro scrollbar, jakmile je aplikace načtená
+      const loadScrollbarStyles = async () => {
+        try {
+          await import("./components/scrollbarstyles.css");
+          console.log("Scrollbar styles loaded");
+        } catch (error) {
+          console.error("Failed to load scrollbar styles:", error);
+        }
+      };
+      loadScrollbarStyles();
+    } else {
+      // Během načítání skryjeme scrollbary
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden"; // Skrytí na celém dokumentu
+    }
+  }, [isLoaded]);
 
   return (
     <>

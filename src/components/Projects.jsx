@@ -33,7 +33,7 @@ const data = [
                 {/* Main container for projects */}
                 <div className="z-50 flex flex-wrap justify-center items-center gap-6 w-full">
                     {/* Individual cards */}
-                    <a href="https://alfacentaur1.github.io/calculator/" className="z-50">
+                    <a href="https://alfacentaur1.github.io/calculator/" className="z-50 mb-20">
                         <TiltedCard
                             imageSrc={calc}
                             altText="calc"
@@ -51,7 +51,7 @@ const data = [
                             className="flex item-center justify-center"
                         />
                     </a>
-                    <a href="https://zwa.toad.cz/~kopecfi3/phpqr/QR-code-generator/" className="z-50">
+                    <a href="https://zwa.toad.cz/~kopecfi3/phpqr/QR-code-generator/" className="z-50 mb-20">
                         <TiltedCard
                             imageSrc={php}
                             altText="qr"
@@ -68,7 +68,7 @@ const data = [
                             overlayContent={<p className="tilted-card-demo-text">PHP QR code generator</p>}
                         />
                     </a>
-                    <a href="https://alfacentaur1.github.io/rock-paper-scissors-js/" className="z-50">
+                    <a href="https://alfacentaur1.github.io/rock-paper-scissors-js/" className="z-50 mb-20">
                         <TiltedCard
                             imageSrc={rps}
                             altText="rps"
@@ -85,7 +85,7 @@ const data = [
                             overlayContent={<p className="tilted-card-demo-text">JS rock paper scissors</p>}
                         />
                     </a>
-                    <a href="https://zwa.toad.cz/~kopecfi3/zwa-php/" className="z-50">
+                    <a href="https://zwa.toad.cz/~kopecfi3/zwa-php/" className="z-50 mb-20">
                         <TiltedCard
                             imageSrc={sms}
                             altText="estate"
@@ -99,7 +99,7 @@ const data = [
                             showMobileWarning={false}
                             showTooltip={true}
                             displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">PHP reality estate website</p>}
+                            overlayContent={<p className="tilted-card-demo-text mb-20">PHP reality estate website</p>}
                         />
                     </a>
                 </div>

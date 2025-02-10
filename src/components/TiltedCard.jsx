@@ -76,7 +76,7 @@ export default function TiltedCard({
   return (
     <figure
       ref={ref}
-      className="tilted-card-figure"
+      className="tilted-card-figure mb-20"
       style={{
         height: containerHeight,
         width: containerWidth,
