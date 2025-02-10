@@ -99,6 +99,9 @@ export default function TiltedCard({
           rotateX,
           rotateY,
           scale,
+          display:"flex",
+          justifyContent:"center",
+          alignItems:"center"
         }}
       >
         <motion.img

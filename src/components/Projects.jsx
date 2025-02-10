@@ -27,7 +27,7 @@ const data = [
     text="All source codes available on my GitHub."
     disabled={false}
     speed={3}
-    className="z-50 shiny-text text-xl pt-5 mb-40 text-center" 
+    className="w-[40%] z-50 shiny-text text-xl pt-5 mb-40 text-center" 
 />
     
                 {/* Main container for projects */}
@@ -41,13 +41,14 @@ const data = [
                             containerHeight="400px"
                             containerWidth="400px"
                             imageHeight="350px"
-                            imageWidth="350px"
+                            imageWidth="300px"
                             rotateAmplitude={12}
                             scaleOnHover={1.2}
                             showMobileWarning={false}
                             showTooltip={true}
                             displayOverlayContent={true}
                             overlayContent={<p className="tilted-card-demo-text">JS Calculator</p>}
+                            className="flex item-center justify-center"
                         />
                     </a>
                     <a href="https://zwa.toad.cz/~kopecfi3/phpqr/QR-code-generator/" className="z-50">
@@ -58,7 +59,7 @@ const data = [
                             containerHeight="400px"
                             containerWidth="400px"
                             imageHeight="350px"
-                            imageWidth="350px"
+                            imageWidth="300px"
                             rotateAmplitude={12}
                             scaleOnHover={1.2}
                             showMobileWarning={false}
@@ -75,7 +76,7 @@ const data = [
                             containerHeight="400px"
                             containerWidth="400px"
                             imageHeight="350px"
-                            imageWidth="350px"
+                            imageWidth="300px"
                             rotateAmplitude={12}
                             scaleOnHover={1.2}
                             showMobileWarning={false}
@@ -92,7 +93,7 @@ const data = [
                             containerHeight="400px"
                             containerWidth="400px"
                             imageHeight="350px"
-                            imageWidth="350px"
+                            imageWidth="300px"
                             rotateAmplitude={12}
                             scaleOnHover={1.2}
                             showMobileWarning={false}
