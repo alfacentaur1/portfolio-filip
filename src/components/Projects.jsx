@@ -88,7 +88,7 @@ const data = [
                     <a href="https://zwa.toad.cz/~kopecfi3/zwa-php/" className="z-50 mb-20">
                         <TiltedCard
                             imageSrc={sms}
-                            altText="estate"
+                            altText="sms"
                             captionText="PHP reality estate website"
                             containerHeight="400px"
                             containerWidth="400px"
@@ -99,7 +99,7 @@ const data = [
                             showMobileWarning={false}
                             showTooltip={true}
                             displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text mb-20">PHP reality estate website</p>}
+                            overlayContent={<p className="tilted-card-demo-text">PHP reality estate website</p>}
                         />
                     </a>
                 </div>
