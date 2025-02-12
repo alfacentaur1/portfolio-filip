@@ -15,21 +15,20 @@
   
 
   ::-webkit-scrollbar-track {
-    background: rgba(64, 62, 62, 1);
-    border-radius: 100vw;
-    margin-block: 0.5em;
+    background: transparent;
+
   }
   
 
   ::-webkit-scrollbar-thumb {
-    border: 0.25em solid rgba(64, 62, 62, 1);
-    background: rgba(19, 17, 17, 0.687);
+    background: rgba(58, 56, 56, 0.687);
     border-radius: 100vw;
   }
   
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(19, 17, 17, 0.4);
+    background: rgba(58, 56, 56, 0.377);
     cursor:pointer;
-    animation: scrollbar1 0.3s ease-out forwards; 
+
+
   }
