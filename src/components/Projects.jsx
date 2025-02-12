@@ -6,6 +6,10 @@ import php from "./imgs/php.png";
 import rps from "./imgs/rps.png"; 
 import sms from "./imgs/real.png";
 import TiltedCard from './TiltedCard';
+import cookie from "./imgs/cookie.png";
+import todo from "./imgs/to-do.png";
+import weather from "./imgs/weather.png";
+import stopwatch from "./imgs/stopwatch.png";
 
 const data = [
     { id: "https://alfacentaur1.github.io/calculator/", image: calc, height: 500 },
@@ -100,6 +104,74 @@ const data = [
                             showTooltip={true}
                             displayOverlayContent={true}
                             overlayContent={<p className="tilted-card-demo-text">PHP reality estate website</p>}
+                        />
+                    </a>
+                    <a href="https://stopwatch-kappa-nine.vercel.app/" className="z-50 mb-20">
+                        <TiltedCard
+                            imageSrc={stopwatch}
+                            altText="stopwatch"
+                            captionText="JS stopwatch"
+                            containerHeight="400px"
+                            containerWidth="400px"
+                            imageHeight="350px"
+                            imageWidth="300px"
+                            rotateAmplitude={12}
+                            scaleOnHover={1.2}
+                            showMobileWarning={false}
+                            showTooltip={true}
+                            displayOverlayContent={true}
+                            overlayContent={<p className="tilted-card-demo-text">JS stopwatch</p>}
+                        />
+                    </a>
+                    <a href="https://weather-app-flame-beta-35.vercel.app/" className="z-50 mb-20">
+                        <TiltedCard
+                            imageSrc={weather}
+                            altText="weather"
+                            captionText="JS weather app"
+                            containerHeight="400px"
+                            containerWidth="400px"
+                            imageHeight="350px"
+                            imageWidth="300px"
+                            rotateAmplitude={12}
+                            scaleOnHover={1.2}
+                            showMobileWarning={false}
+                            showTooltip={true}
+                            displayOverlayContent={true}
+                            overlayContent={<p className="tilted-card-demo-text">JS weather app</p>}
+                        />
+                    </a>
+                    <a href="https://js-to-do-app-seven.vercel.app/" className="z-50 mb-20">
+                        <TiltedCard
+                            imageSrc={todo}
+                            altText="to-do"
+                            captionText="JS to do app"
+                            containerHeight="400px"
+                            containerWidth="400px"
+                            imageHeight="350px"
+                            imageWidth="300px"
+                            rotateAmplitude={12}
+                            scaleOnHover={1.2}
+                            showMobileWarning={false}
+                            showTooltip={true}
+                            displayOverlayContent={true}
+                            overlayContent={<p className="tilted-card-demo-text">JS to do app</p>}
+                        />
+                    </a>
+                    <a href="https://clickme-app.vercel.app/" className="z-50 mb-20">
+                        <TiltedCard
+                            imageSrc={cookie}
+                            altText="cookie"
+                            captionText="JS to do app"
+                            containerHeight="400px"
+                            containerWidth="400px"
+                            imageHeight="350px"
+                            imageWidth="300px"
+                            rotateAmplitude={12}
+                            scaleOnHover={1.2}
+                            showMobileWarning={false}
+                            showTooltip={true}
+                            displayOverlayContent={true}
+                            overlayContent={<p className="tilted-card-demo-text">JS cookie clicker</p>}
                         />
                     </a>
                 </div>

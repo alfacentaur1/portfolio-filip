@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     if (isLoaded) {
       // Po načtení povolíme scrollování na těle
-      document.body.style.overflow = "auto"; 
+      document.body.style.overflow = "hidden"; 
       document.documentElement.style.overflow = "auto"; 
       
       // Načteme vlastní styl pro scrollbar, jakmile je aplikace načtená

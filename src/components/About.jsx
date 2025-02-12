@@ -1,6 +1,7 @@
 import BlurText from "./BlurText";
 import pfp from "./imgs/pfp.jpg";
 import ParticlesBG from "./Particles";
+import '../index.css';
 export const About = () => {
     return (
         

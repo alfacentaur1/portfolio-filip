@@ -1,35 +1,35 @@
 @keyframes scrollbar1 {
     0% {
-      transform: scaleY(1); /* Původní velikost */
-      background: rgba(19, 17, 17, 0.687); /* Výchozí barva */
+      transform: scaleY(1); 
+      background: rgba(19, 17, 17, 0.687); 
     }
     100% {
-      transform: scaleY(1.5); /* Zvětšení výšky scrollbar */
-      background: red; /* Červená barva */
+      transform: scaleY(1.5); 
+      background: red; 
     }
   }
   
   ::-webkit-scrollbar {
-    width: 2em; /* Nastavení šířky scrollbar */
+    width: 2em; 
   }
   
-  /* Pozadí scrollbar */
+
   ::-webkit-scrollbar-track {
     background: rgba(64, 62, 62, 1);
     border-radius: 100vw;
     margin-block: 0.5em;
   }
   
-  /* Samotný scrollbar button */
+
   ::-webkit-scrollbar-thumb {
     border: 0.25em solid rgba(64, 62, 62, 1);
     background: rgba(19, 17, 17, 0.687);
     border-radius: 100vw;
   }
   
-  /* Hover efekt pro scrollbar thumb */
+
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(19, 17, 17, 0.4);
     cursor:pointer;
-    animation: scrollbar1 0.3s ease-out forwards; /* Animace na hover */
+    animation: scrollbar1 0.3s ease-out forwards; 
   }
