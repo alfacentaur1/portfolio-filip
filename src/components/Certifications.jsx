@@ -9,7 +9,7 @@ export const Certifications = () => {
 
   return (
     
-    <section id="certifications" className="py-16 flex flex-col justify-center items-center pt-55 pb-25 flex-wrap z-50">
+    <section id="certifications" className="py-16 flex flex-col justify-center items-center pt-55 pb-25 flex-wrap z-50 mb-35">
     <ShinyText text="Certifications" disabled={false} speed={3} className='shiny-text text-5xl ' />
       <div className="flex justify-evenly flex-wrap w-[100%]">
       <SpotlightCard

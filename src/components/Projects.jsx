@@ -19,7 +19,7 @@ const data = [
     ];
     export const Projects = () => {
         return (
-            <section id="projects" className="z-50 pb-25 pt-25 flex items-center justify-center flex-col z-50 mb-20">
+            <section id="projects" className="z-50 pb-5 pt-25 flex items-center justify-center flex-col z-50 ">
                 <ShinyText
     text="Projects"
     disabled={false}
