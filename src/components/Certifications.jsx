@@ -49,6 +49,28 @@ export const Certifications = () => {
               maxWidth: "200px",
             }}
           />
+          <h2 className="mt-4 mb-4 text-center">Cybersecurity fundamentals</h2>
+          <ul>
+            <li className="underline">Skills obtained</li>
+            <li>Safety in cyber world</li>
+            <li>Common threads and attacks</li>
+            <li>Cybersecurity policies</li>
+            <li>Best practices</li>
+          </ul>
+        </SpotlightCard>
+        <SpotlightCard
+          className="mb-10 z-50 custom-spotlight-card spotlight-card w-[70%] sm:w-[50%] md:w-[33%] lg:w-[25%] flex flex-col items-center justify-center transform translate-y-10 transition-all duration-500 hover:shadow-x3"
+          spotlightColor="rgba(225, 212, 214, 0.25)"
+        >
+          <img
+            src={image}
+            alt="ibm_logo"
+            style={{
+              borderRadius: "15px",
+              width: "80%",
+              maxWidth: "200px",
+            }}
+          />
           <h2 className="mt-4 mb-4 text-center">Project management</h2>
           <ul>
             <li className="underline">Skills obtained</li>
