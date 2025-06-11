@@ -10,6 +10,7 @@ import cookie from "./imgs/cookie.png";
 import todo from "./imgs/to-do.png";
 import weather from "./imgs/weather.png";
 import stopwatch from "./imgs/stopwatch.png";
+import pswd from "./imgs/pswd.png";
 
 const data = [
     { id: "https://alfacentaur1.github.io/calculator/", image: calc, height: 500 },
@@ -140,6 +141,23 @@ const data = [
                             overlayContent={<p className="tilted-card-demo-text">JS weather app</p>}
                         />
                     </a>
+                    <a href="https://github.com/alfacentaur1/java-asterix-game" className="z-50 mb-20">
+                        <TiltedCard
+                            imageSrc={asterix}
+                            altText="asterix"
+                            captionText="Java Asterix Game"
+                            containerHeight="400px"
+                            containerWidth="400px"
+                            imageHeight="350px"
+                            imageWidth="300px"
+                            rotateAmplitude={12}
+                            scaleOnHover={1.2}
+                            showMobileWarning={false}
+                            showTooltip={true}
+                            displayOverlayContent={true}
+                            overlayContent={<p className="tilted-card-demo-text">Java asterix game</p>}
+                        />
+                    </a>
                     <a href="https://js-to-do-app-seven.vercel.app/" className="z-50 mb-20">
                         <TiltedCard
                             imageSrc={todo}
@@ -172,6 +190,23 @@ const data = [
                             showTooltip={true}
                             displayOverlayContent={true}
                             overlayContent={<p className="tilted-card-demo-text">JS cookie clicker</p>}
+                        />
+                    </a>
+                    <a href="https://password-generator-theta-sand.vercel.app/" className="z-50 mb-20">
+                        <TiltedCard
+                            imageSrc={pswd}
+                            altText="pswd"
+                            captionText="JS password generator"
+                            containerHeight="400px"
+                            containerWidth="400px"
+                            imageHeight="350px"
+                            imageWidth="300px"
+                            rotateAmplitude={12}
+                            scaleOnHover={1.2}
+                            showMobileWarning={false}
+                            showTooltip={true}
+                            displayOverlayContent={true}
+                            overlayContent={<p className="tilted-card-demo-text">JS password generator</p>}
                         />
                     </a>
                 </div>
