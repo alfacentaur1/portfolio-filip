@@ -11,6 +11,7 @@ import todo from "./imgs/to-do.png";
 import weather from "./imgs/weather.png";
 import stopwatch from "./imgs/stopwatch.png";
 import pswd from "./imgs/pswd.png";
+import asterix from "./imgs/asterix.png";
 
 const data = [
     { id: "https://alfacentaur1.github.io/calculator/", image: calc, height: 500 },
