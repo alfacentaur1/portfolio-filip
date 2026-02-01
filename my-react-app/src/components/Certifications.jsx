@@ -13,7 +13,7 @@ export const Certifications = () => {
     <ShinyText text="Certifications" disabled={false} speed={3} className='shiny-text text-5xl ' />
       <div className="flex justify-evenly flex-wrap w-[100%]">
       <SpotlightCard
-          className="z-50 custom-spotlight-card spotlight-card w-[25%] flex flex-col items-center justify-center transform translate-y-10 transition-all duration-500 hover:shadow-x3"
+          className="mb-10 z-50 custom-spotlight-card spotlight-card w-[70%] sm:w-[50%] md:w-[33%] lg:w-[25%] flex flex-col items-center justify-center transform translate-y-10 transition-all duration-500 hover:shadow-x3"
           spotlightColor="rgba(225, 212, 214, 0.25)"
         >
           <img
@@ -37,7 +37,7 @@ export const Certifications = () => {
 
 
   <SpotlightCard
-          className="z-50 custom-spotlight-card spotlight-card w-[25%] flex flex-col items-center justify-center transform translate-y-10 transition-all duration-500 hover:shadow-x3"
+          className="mb-10 z-50 custom-spotlight-card spotlight-card w-[70%] sm:w-[50%] md:w-[33%] lg:w-[25%] flex flex-col items-center justify-center transform translate-y-10 transition-all duration-500 hover:shadow-x3"
           spotlightColor="rgba(225, 212, 214, 0.25)"
         >
           <img
@@ -62,7 +62,7 @@ export const Certifications = () => {
         
 
         <SpotlightCard
-          className="z-50 custom-spotlight-card spotlight-card w-[25%] flex flex-col items-center justify-center  transform translate-y-10 transition-all duration-500 hover:shadow-xl"
+          className="z-50 custom-spotlight-card spotlight-card w-[70%] sm:w-[50%] md:w-[33%] lg:w-[25%] flex flex-col items-center justify-center transform translate-y-10 transition-all duration-500 hover:shadow-x3 mb-10"
           spotlightColor="rgba(225, 212, 214, 0.25)"
         >
           <img

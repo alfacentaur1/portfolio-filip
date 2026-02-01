@@ -23,7 +23,7 @@ export const Contact = () => {
                     className="text-2xl mb-30 flex flex-wrap justify-center items-center"
                 />
         <div className="z-50 flex justify-evenly items-center w-[50%] flex-wrap mb-10">
-        <a href="https://www.linkedin.com/in/filipkopecky/">
+        <a href="https://www.linkedin.com/in/filipkopecky/" className="mb-17">
             <TiltedCard
             imageSrc={linkedin}
             altText="linkedin"
@@ -43,8 +43,8 @@ export const Contact = () => {
                 </p>
             }
             />
-        </a>
-        <a href="https://github.com/alfacentaur1">
+        </a >
+        <a href="https://github.com/alfacentaur1" className="mb-17">
             <TiltedCard
             imageSrc={github}
             altText="github"
