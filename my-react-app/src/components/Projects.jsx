@@ -1,271 +1,148 @@
-import CircularGallery from './CircularGallery';
 import ShinyText from './ShinyText'; 
-import Masonry from './Masonry';
+import TiltedCard from './TiltedCard';
 import calc from "./imgs/calc.png"; 
 import php from "./imgs/php.png"; 
 import rps from "./imgs/rps.png"; 
 import sms from "./imgs/real.png";
-import TiltedCard from './TiltedCard';
 import cookie from "./imgs/cookie.png";
 import todo from "./imgs/to-do.png";
 import weather from "./imgs/weather.png";
 import stopwatch from "./imgs/stopwatch.png";
 import pswd from "./imgs/pswd.png";
 import asterix from "./imgs/asterix.png";
+import springImg from "./imgs/spring.png"; 
+import smarthome from "./imgs/smarthome.png";
+import dijkstra from "./imgs/dijkstra.png";
 
-const data = [
-    { id: "https://alfacentaur1.github.io/calculator/", image: calc, height: 500 },
-    { id: 2, image: php, height: 600 },
-    { id: 3, image: rps, height: 500 },
-    { id: 4, image: sms, height: 700}
-    ];
-    export const Projects = () => {
-        return (
-            <section id="projects" className="z-50 pb-5 pt-25 flex items-center justify-center flex-col z-50 ">
-                <ShinyText
-    text="Projects"
-    disabled={false}
-    speed={3}
-    className="z-50 shiny-text text-5xl text-center" 
-/>
+const projectsData = [
+    {
+        title: "API Board Game Rental",
+        link: "https://github.com/alfacentaur1/api-board-game-rental",
+        image: springImg,
+        alt: "spring"
+    },
+    {
+        title: "Smart Home Simulation",
+        link: "https://github.com/alfacentaur1/smarthome-simulation",
+        image: smarthome,
+        alt: "smarthome"
+    },
+    {
+        title: "Dijkstra, Bellman-Ford Comparison",
+        link: "https://github.com/alfacentaur1/dijkstra---BF-comparison",
+        image: dijkstra,
+        alt: "dijkstra"
+    },
+    {
+        title: "JS Calculator",
+        link: "https://alfacentaur1.github.io/calculator/",
+        image: calc,
+        alt: "calc"
+    },
+    {
+        title: "QR code generator",
+        link: "https://zwa.toad.cz/~kopecfi3/phpqr/QR-code-generator/",
+        image: php,
+        alt: "qr"
+    },
+    {
+        title: "JS rock paper scissors",
+        link: "https://alfacentaur1.github.io/rock-paper-scissors-js/",
+        image: rps,
+        alt: "rps"
+    },
+    {
+        title: "PHP reality estate website",
+        link: "https://zwa.toad.cz/~kopecfi3/zwa-php/",
+        image: sms,
+        alt: "sms"
+    },
+    {
+        title: "JS stopwatch",
+        link: "https://stopwatch-kappa-nine.vercel.app/",
+        image: stopwatch,
+        alt: "stopwatch"
+    },
+    {
+        title: "JS weather app",
+        link: "https://weather-app-flame-beta-35.vercel.app/",
+        image: weather,
+        alt: "weather"
+    },
+    {
+        title: "Java Asterix Game",
+        link: "https://github.com/alfacentaur1/java-asterix-game",
+        image: asterix,
+        alt: "asterix"
+    },
+    {
+        title: "JS to do app",
+        link: "https://js-to-do-app-seven.vercel.app/",
+        image: todo,
+        alt: "to-do"
+    },
+    {
+        title: "JS cookie clicker",
+        link: "https://clickme-app.vercel.app/",
+        image: cookie,
+        alt: "cookie"
+    },
+    {
+        title: "JS password generator",
+        link: "https://password-generator-theta-sand.vercel.app/",
+        image: pswd,
+        alt: "pswd"
+    }
+];
 
-<ShinyText
-    text="All source codes available on my GitHub."
-    disabled={false}
-    speed={3}
-    className="w-[40%] z-50 shiny-text text-xl pt-5 mb-40 text-center" 
-/>
-    
-                {/* Main container for projects */}
-                <div className="z-50 flex flex-wrap justify-center items-center gap-6 w-full">
-                    {/* Individual cards */}
-                    <a href="https://github.com/alfacentaur1/api-board-game-rental" className="z-50 mb-20">
+export const Projects = () => {
+    return (
+        <section id="projects" className="relative z-50 py-20 flex items-center justify-center flex-col px-4">
+            <ShinyText
+                text="Projects"
+                disabled={false}
+                speed={3}
+                className="text-5xl text-center mb-6 font-bold" 
+            />
+
+            <ShinyText
+                text="All source codes available on my GitHub."
+                disabled={false}
+                speed={3}
+                className="text-xl mb-16 text-center max-w-2xl" 
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-7xl mx-auto place-items-center">
+                {projectsData.map((project, index) => (
+                    <a 
+                        key={index} 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="w-full flex justify-center transition-transform hover:scale-105"
+                    >
                         <TiltedCard
-                            imageSrc={spring}
-                            altText="spring"
-                            captionText="API Board Game Rental"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
+                            imageSrc={project.image}
+                            altText={project.alt}
+                            captionText={project.title}
+                            containerHeight="300px"
+                            containerWidth="100%"
+                            imageHeight="250px"
+                            imageWidth="100%"
                             rotateAmplitude={12}
-                            scaleOnHover={1.2}
+                            scaleOnHover={1.1}
                             showMobileWarning={false}
                             showTooltip={true}
                             displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">API Board Game Rental</p>}
-                            className="flex item-center justify-center"
+                            overlayContent={
+                                <p className="bg-black/70 text-white px-3 py-1 rounded-md text-sm backdrop-blur-sm">
+                                    {project.title}
+                                </p>
+                            }
                         />
                     </a>
-                    <a href="https://github.com/alfacentaur1/smarthome-simulation" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={smarthome}
-                            altText="smarthome"
-                            captionText="Smart Home Simulation"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">Smart Home Simulation</p>}
-                            className="flex item-center justify-center"
-                        />
-                    </a>
-                        <a href="https://github.com/alfacentaur1/dijkstra---BF-comparison" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={dijkstra}
-                            altText="dijkstra"
-                            captionText="Dijkstra, Bellman-Ford Comparison"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">Dijkstra, Bellman-Ford Comparison</p>}
-                            className="flex item-center justify-center"
-                        />
-                    </a>
-                    <a href="https://alfacentaur1.github.io/calculator/" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={calc}
-                            altText="calc"
-                            captionText="JS Calculator"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">JS Calculator</p>}
-                            className="flex item-center justify-center"
-                        />
-                    </a>
-                    <a href="https://zwa.toad.cz/~kopecfi3/phpqr/QR-code-generator/" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={php}
-                            altText="qr"
-                            captionText="QR code generator"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">PHP QR code generator</p>}
-                        />
-                    </a>
-                    <a href="https://alfacentaur1.github.io/rock-paper-scissors-js/" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={rps}
-                            altText="rps"
-                            captionText="JS rock paper scissors"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">JS rock paper scissors</p>}
-                        />
-                    </a>
-                    <a href="https://zwa.toad.cz/~kopecfi3/zwa-php/" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={sms}
-                            altText="sms"
-                            captionText="PHP reality estate website"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">PHP reality estate website</p>}
-                        />
-                    </a>
-                    <a href="https://stopwatch-kappa-nine.vercel.app/" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={stopwatch}
-                            altText="stopwatch"
-                            captionText="JS stopwatch"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">JS stopwatch</p>}
-                        />
-                    </a>
-                    <a href="https://weather-app-flame-beta-35.vercel.app/" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={weather}
-                            altText="weather"
-                            captionText="JS weather app"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">JS weather app</p>}
-                        />
-                    </a>
-                    <a href="https://github.com/alfacentaur1/java-asterix-game" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={asterix}
-                            altText="asterix"
-                            captionText="Java Asterix Game"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">Java asterix game</p>}
-                        />
-                    </a>
-                    <a href="https://js-to-do-app-seven.vercel.app/" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={todo}
-                            altText="to-do"
-                            captionText="JS to do app"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">JS to do app</p>}
-                        />
-                    </a>
-                    <a href="https://clickme-app.vercel.app/" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={cookie}
-                            altText="cookie"
-                            captionText="JS to do app"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">JS cookie clicker</p>}
-                        />
-                    </a>
-                    <a href="https://password-generator-theta-sand.vercel.app/" className="z-50 mb-20">
-                        <TiltedCard
-                            imageSrc={pswd}
-                            altText="pswd"
-                            captionText="JS password generator"
-                            containerHeight="400px"
-                            containerWidth="400px"
-                            imageHeight="350px"
-                            imageWidth="300px"
-                            rotateAmplitude={12}
-                            scaleOnHover={1.2}
-                            showMobileWarning={false}
-                            showTooltip={true}
-                            displayOverlayContent={true}
-                            overlayContent={<p className="tilted-card-demo-text">JS password generator</p>}
-                        />
-                    </a>
-                </div>
-            </section>
-        );
-    };
-    
+                ))}
+            </div>
+        </section>
+    );
+};
