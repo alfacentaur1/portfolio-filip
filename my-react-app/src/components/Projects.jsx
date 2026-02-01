@@ -15,84 +15,19 @@ import smarthome from "./imgs/smarthome.png";
 import dijkstra from "./imgs/dijkstra.png";
 
 const projectsData = [
-    {
-        title: "API Board Game Rental",
-        link: "https://github.com/alfacentaur1/api-board-game-rental",
-        image: springImg,
-        alt: "spring"
-    },
-    {
-        title: "Smart Home Simulation",
-        link: "https://github.com/alfacentaur1/smarthome-simulation",
-        image: smarthome,
-        alt: "smarthome"
-    },
-    {
-        title: "Dijkstra, Bellman-Ford Comparison",
-        link: "https://github.com/alfacentaur1/dijkstra---BF-comparison",
-        image: dijkstra,
-        alt: "dijkstra"
-    },
-    {
-        title: "JS Calculator",
-        link: "https://alfacentaur1.github.io/calculator/",
-        image: calc,
-        alt: "calc"
-    },
-    {
-        title: "QR code generator",
-        link: "https://zwa.toad.cz/~kopecfi3/phpqr/QR-code-generator/",
-        image: php,
-        alt: "qr"
-    },
-    {
-        title: "JS rock paper scissors",
-        link: "https://alfacentaur1.github.io/rock-paper-scissors-js/",
-        image: rps,
-        alt: "rps"
-    },
-    {
-        title: "PHP reality estate website",
-        link: "https://zwa.toad.cz/~kopecfi3/zwa-php/",
-        image: sms,
-        alt: "sms"
-    },
-    {
-        title: "JS stopwatch",
-        link: "https://stopwatch-kappa-nine.vercel.app/",
-        image: stopwatch,
-        alt: "stopwatch"
-    },
-    {
-        title: "JS weather app",
-        link: "https://weather-app-flame-beta-35.vercel.app/",
-        image: weather,
-        alt: "weather"
-    },
-    {
-        title: "Java Asterix Game",
-        link: "https://github.com/alfacentaur1/java-asterix-game",
-        image: asterix,
-        alt: "asterix"
-    },
-    {
-        title: "JS to do app",
-        link: "https://js-to-do-app-seven.vercel.app/",
-        image: todo,
-        alt: "to-do"
-    },
-    {
-        title: "JS cookie clicker",
-        link: "https://clickme-app.vercel.app/",
-        image: cookie,
-        alt: "cookie"
-    },
-    {
-        title: "JS password generator",
-        link: "https://password-generator-theta-sand.vercel.app/",
-        image: pswd,
-        alt: "pswd"
-    }
+    { title: "API Board Game Rental", link: "https://github.com/alfacentaur1/api-board-game-rental", image: springImg, alt: "spring" },
+    { title: "Smart Home Simulation", link: "https://github.com/alfacentaur1/smarthome-simulation", image: smarthome, alt: "smarthome" },
+    { title: "Dijkstra, Bellman-Ford Comparison", link: "https://github.com/alfacentaur1/dijkstra---BF-comparison", image: dijkstra, alt: "dijkstra" },
+    { title: "JS Calculator", link: "https://alfacentaur1.github.io/calculator/", image: calc, alt: "calc" },
+    { title: "QR code generator", link: "https://zwa.toad.cz/~kopecfi3/phpqr/QR-code-generator/", image: php, alt: "qr" },
+    { title: "JS rock paper scissors", link: "https://alfacentaur1.github.io/rock-paper-scissors-js/", image: rps, alt: "rps" },
+    { title: "PHP reality estate website", link: "https://zwa.toad.cz/~kopecfi3/zwa-php/", image: sms, alt: "sms" },
+    { title: "JS stopwatch", link: "https://stopwatch-kappa-nine.vercel.app/", image: stopwatch, alt: "stopwatch" },
+    { title: "JS weather app", link: "https://weather-app-flame-beta-35.vercel.app/", image: weather, alt: "weather" },
+    { title: "Java Asterix Game", link: "https://github.com/alfacentaur1/java-asterix-game", image: asterix, alt: "asterix" },
+    { title: "JS to do app", link: "https://js-to-do-app-seven.vercel.app/", image: todo, alt: "to-do" },
+    { title: "JS cookie clicker", link: "https://clickme-app.vercel.app/", image: cookie, alt: "cookie" },
+    { title: "JS password generator", link: "https://password-generator-theta-sand.vercel.app/", image: pswd, alt: "pswd" }
 ];
 
 export const Projects = () => {
@@ -104,14 +39,12 @@ export const Projects = () => {
                 speed={3}
                 className="text-5xl text-center mb-6 font-bold" 
             />
-
             <ShinyText
                 text="All source codes available on my GitHub."
                 disabled={false}
                 speed={3}
                 className="text-xl mb-16 text-center max-w-2xl" 
             />
-
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-7xl mx-auto place-items-center">
                 {projectsData.map((project, index) => (
                     <a 

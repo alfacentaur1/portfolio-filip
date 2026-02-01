@@ -1,0 +1,1 @@
+@keyframes scrollbar1{0%{transform:scaleY(1);background:#131111af}to{transform:scaleY(1.5);background:red}}::-webkit-scrollbar{width:2em}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#3a3838af;border-radius:100vw}::-webkit-scrollbar-thumb:hover{background:#3a383860;cursor:pointer}
