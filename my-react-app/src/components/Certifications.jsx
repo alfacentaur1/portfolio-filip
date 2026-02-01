@@ -9,11 +9,14 @@ export const Certifications = () => {
 
   return (
     
-    <section id="certifications" className="py-16 flex flex-col justify-center items-center pt-55 pb-25 flex-wrap z-50">
+    <section id="certifications" className="py-16 flex flex-col justify-center items-center pt-55 pb-25 flex-wrap z-50 mb-35">
     <ShinyText text="Certifications" disabled={false} speed={3} className='shiny-text text-5xl ' />
-      <div className="flex justify-evenly flex-wrap w-[100%]">
+      <div className="z-50 flex flex-wrap justify-center items-center gap-6 w-full">
       <SpotlightCard
-          className="mb-10 z-50 custom-spotlight-card spotlight-card w-[70%] sm:w-[50%] md:w-[33%] lg:w-[25%] flex flex-col items-center justify-center transform translate-y-10 transition-all duration-500 hover:shadow-x3"
+          className="mb-10 z-50 custom-spotlight-card spotlight-card 
+  w-70% sm:w-1/2 md:w-1/3 
+  flex flex-col items-center justify-center 
+  transform translate-y-10 transition-all duration-500 hover:shadow-x3 px-4"
           spotlightColor="rgba(225, 212, 214, 0.25)"
         >
           <img
@@ -37,7 +40,35 @@ export const Certifications = () => {
 
 
   <SpotlightCard
-          className="mb-10 z-50 custom-spotlight-card spotlight-card w-[70%] sm:w-[50%] md:w-[33%] lg:w-[25%] flex flex-col items-center justify-center transform translate-y-10 transition-all duration-500 hover:shadow-x3"
+          className="mb-10 z-50 custom-spotlight-card spotlight-card 
+  w-[70%] sm:w-1/2 md:w-1/3 
+  flex flex-col items-center justify-center 
+  transform translate-y-10 transition-all duration-500 hover:shadow-x3 px-4"
+          spotlightColor="rgba(225, 212, 214, 0.25)"
+        >
+          <img
+            src={image}
+            alt="ibm_logo"
+            style={{
+              borderRadius: "15px",
+              width: "80%",
+              maxWidth: "200px",
+            }}
+          />
+          <h2 className="mt-4 mb-4 text-center">Cybersecurity fundamentals</h2>
+          <ul>
+            <li className="underline">Skills obtained</li>
+            <li>Safety in cyber world</li>
+            <li>Common threads and attacks</li>
+            <li>Cybersecurity policies</li>
+            <li>Best practices</li>
+          </ul>
+        </SpotlightCard>
+        <SpotlightCard
+          className="mb-10 z-50 custom-spotlight-card spotlight-card 
+  w-[70%] sm:w-1/2 md:w-1/3 
+  flex flex-col items-center justify-center 
+  transform translate-y-10 transition-all duration-500 hover:shadow-x3 px-4"
           spotlightColor="rgba(225, 212, 214, 0.25)"
         >
           <img
@@ -62,7 +93,10 @@ export const Certifications = () => {
         
 
         <SpotlightCard
-          className="z-50 custom-spotlight-card spotlight-card w-[70%] sm:w-[50%] md:w-[33%] lg:w-[25%] flex flex-col items-center justify-center transform translate-y-10 transition-all duration-500 hover:shadow-x3 mb-10"
+          className="mb-10 z-50 custom-spotlight-card spotlight-card 
+  w-[70%] sm:w-1/2 md:w-1/3 
+  flex flex-col items-center justify-center 
+  transform translate-y-10 transition-all duration-500 hover:shadow-x3 px-4"
           spotlightColor="rgba(225, 212, 214, 0.25)"
         >
           <img

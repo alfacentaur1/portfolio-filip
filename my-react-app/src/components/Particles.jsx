@@ -14,7 +14,7 @@ const ParticlesBG = () => {
                 init={particlesInit}
                 options={{
                     particles: {
-                        number: { value: 100 },
+                        number: { value: 20 },
                         move: { enable: true, speed: 2 },
                         shape: { type: "circle" },
                         size: { value: 3 },
