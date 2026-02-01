@@ -1,0 +1,34 @@
+@keyframes scrollbar1 {
+    0% {
+      transform: scaleY(1); 
+      background: rgba(19, 17, 17, 0.687); 
+    }
+    100% {
+      transform: scaleY(1.5); 
+      background: red; 
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    width: 2em; 
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(58, 56, 56, 0.687);
+    border-radius: 100vw;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(58, 56, 56, 0.377);
+    cursor:pointer;
+
+
+  }
