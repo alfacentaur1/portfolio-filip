@@ -13,11 +13,13 @@ import asterix from "./imgs/asterix.png";
 import springImg from "./imgs/spring.png"; 
 import smarthome from "./imgs/smarthome.png";
 import dijkstra from "./imgs/dijkstra.png";
+import gardener from "./imgs/gardener.png";
 
 const projectsData = [
     { title: "API Board Game Rental", link: "https://github.com/alfacentaur1/api-board-game-rental", image: springImg, alt: "spring" },
     { title: "Smart Home Simulation", link: "https://github.com/alfacentaur1/smarthome-simulation", image: smarthome, alt: "smarthome" },
     { title: "Dijkstra, Bellman-Ford Comparison", link: "https://github.com/alfacentaur1/dijkstra---BF-comparison", image: dijkstra, alt: "dijkstra" },
+    { title: "Garden game", link: "https://github.com/alfacentaur1/gacha-garden", image: gardener, alt: "gardener" },
     { title: "JS Calculator", link: "https://alfacentaur1.github.io/calculator/", image: calc, alt: "calc" },
     { title: "QR code generator", link: "https://zwa.toad.cz/~kopecfi3/phpqr/QR-code-generator/", image: php, alt: "qr" },
     { title: "JS rock paper scissors", link: "https://alfacentaur1.github.io/rock-paper-scissors-js/", image: rps, alt: "rps" },
